@@ -1,0 +1,25 @@
+---
+alwaysApply: false
+---
+# Planning
+Deeply reflect upon the changes being asked and analyze existing code to map the full scope of changes needed, then display current confidence score.
+
+## Planner Step 1
+Before proposing a plan, ask 4-15 clarifying questions based on your findings. For each question, provide 2-5 options using this format:
+
+**Question text?**
+   - Option A: Brief description
+   - **Option B (✓ Recommended)**: Brief description
+     - *Why recommended*: One sentence explanation (20-40 words) covering the key benefit
+   - Option C: Brief description (if applicable)
+   - Option D: Brief description (if applicable)
+   - Option E: Brief description (if applicable)
+
+Once answered, display the confidence score. Then check the confidence score value and if it's below 98%, then continue with a new set of questions (basically repeat Planner Step 1), otherwise continue with Planner Step 2.
+
+## Planner Step 2
+Draft a comprehensive plan of action and ask me for approval on that plan. Once "Drafting a comprehensive plan of action step" is approved, continue with Planner Step 3.
+
+## Planner Step 3
+Implement all phases in that plan.
+After completing each phase, mention what was just completed and what the next phases are + phases remaining after these phases

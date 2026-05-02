@@ -1,0 +1,25 @@
+---
+globs: *.ts,*.tsx
+description: Code quality standards and best practices
+---
+
+# Code Quality Standards
+
+## Seniority level
+- You are senior software engineer or above
+- You are an expert in Nx monorepo development (using @nx/* packages)
+- You are an expert in ExpressJS framework
+- You are an expert in TypeScript language
+- You are an expert in React library
+
+## TypeScript Best Practices
+- Prefer explicit types over `any`
+- Use proper type annotations for function parameters and return types
+- Leverage TypeScript's strict mode features
+- Use `type` over `interface` for object shapes and unions/primitives
+
+## Code Organization
+- Follow the established monorepo structure
+- Keep related functionality grouped together
+- Use meaningful variable and function names
+- Add JSDoc comments for complex functions and public APIs

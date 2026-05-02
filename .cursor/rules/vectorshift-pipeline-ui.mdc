@@ -1,0 +1,26 @@
+---
+description: VectorShift pipeline editor — CRA, JavaScript, React Flow, Zustand
+globs: frontend/**/*.js
+alwaysApply: false
+---
+
+# VectorShift frontend (this repo)
+
+This frontend is **Create React App** with **JavaScript** (`.js`), **React 18**, **React Flow 11**, and **Zustand**.
+
+## Do
+
+- Keep **node type strings** aligned: `customInput`, `llm`, `customOutput`, `text` across `toolbar.js` (`DraggableNode type`), `ui.js` (`nodeTypes` keys), and drag payload `{ nodeType }` from `draggableNode.js`.
+- Register new node kinds in **`nodeTypes`** in `ui.js` and export the component from `src/nodes/`.
+- Use React Flow primitives (`Handle`, `Position`, `addEdge`, `applyNodeChanges`, `applyEdgeChanges`) from `reactflow` consistently with existing nodes.
+- Use **`useStore(selector, shallow)`** from `zustand/shallow` when subscribing to multiple fields from the pipeline store.
+
+## Do not
+
+- Do not assume TypeScript, Material UI, or tRPC for this app unless you are explicitly migrating; copied rules elsewhere may not apply.
+
+## Files of reference
+
+- `src/store.js` — global pipeline graph state
+- `src/ui.js` — canvas, drop handler, `ReactFlow` props
+- `src/nodes/*` — custom node UI and handles

@@ -1,0 +1,86 @@
+/* React Flow renders these nodes internally — keep descendant selectors here so visuals match pipeline.css. */
+
+.pipeline-canvas-wrap .react-flow__node {
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+.pipeline-canvas-wrap .react-flow {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+.pipeline-canvas-wrap .react-flow__renderer {
+	background: transparent;
+}
+
+.pipeline-canvas-wrap .react-flow__viewport {
+	background: transparent;
+}
+
+.pipeline-canvas-wrap .react-flow__minimap {
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid rgba(124, 131, 253, 0.22);
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.pipeline-canvas-wrap .react-flow__controls {
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid rgba(124, 131, 253, 0.22);
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.pipeline-canvas-wrap .react-flow__controls-button {
+	background: #1a2235;
+	border-bottom-color: rgba(124, 131, 253, 0.22);
+	fill: #8b95ad;
+}
+
+.pipeline-canvas-wrap .react-flow__controls-button:hover {
+	background: rgba(124, 131, 253, 0.14);
+	fill: #e8ecf7;
+}
+
+.pipeline-canvas-wrap .react-flow__edge-path,
+.pipeline-canvas-wrap .react-flow__connection-path {
+	stroke: rgba(124, 131, 253, 0.5);
+	stroke-width: 1.5;
+}
+
+.pipeline-canvas-wrap .react-flow__edge.selected .react-flow__edge-path,
+.pipeline-canvas-wrap .react-flow__edge:focus .react-flow__edge-path,
+.pipeline-canvas-wrap .react-flow__edge:focus-visible .react-flow__edge-path {
+	stroke: rgba(196, 200, 255, 0.95);
+}
+
+.pipeline-node__handle.react-flow__handle {
+	width: 10px !important;
+	height: 10px !important;
+	border: 2px solid #ffffff;
+	background: var(--pipeline-node-accent, #7c83fd);
+}
+
+.pipeline-node__handle.react-flow__handle-left {
+	left: -6px;
+}
+
+.pipeline-node__handle.react-flow__handle-right {
+	right: -6px;
+}
+
+@media (max-width: 1024px) {
+	.pipeline-canvas-wrap .react-flow__minimap {
+		width: 140px !important;
+		height: 90px !important;
+	}
+}
+
+@media (max-width: 560px) {
+	.pipeline-canvas-wrap .react-flow__controls {
+		transform: scale(0.95);
+		transform-origin: bottom left;
+	}
+}
