@@ -21,9 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-
-/.cursor
-/AGENTS.md 
-/Task.md
-/DS_Store
